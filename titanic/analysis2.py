@@ -24,21 +24,15 @@ train_data.head()
 
 train_data_sub1 = train_data.drop(["PassengerId", "Name", "Ticket", "Cabin"], axis=1)
 train_data_sub2 = train_data_sub1.dropna()
-train_data_sub3 = pd.get_dummies(train_data_sub2)
-train_data_sub3.head()
+train_data_sub2.info()
 
-# +
-X_train = train_data_sub3.drop('Survived', axis=1)
-y_train = train_data_sub3.Survived
+train_data_sub2.describe()
 
-log_reg = LogisticRegression()
-log_reg.fit(X_train, y_train)
-
-# +
-bench_mark = train_data_sub3.Survived.sum() / train_data_sub3.Survived.count()
-
-print("bench_mark : ", bench_mark)
-print("training score : ", log_reg.score(X_train, y_train))
-# -
+plt.figure(figsize=(15,6))
+plt.hist(train_data_sub2.Age[train_data_sub2.Survived == 0], normed=True, bins=10, alpha=0.8, color='red', label='not survived')
+plt.hist(train_data_sub2.Age[train_data_sub2.Survived == 1], normed=True, bins=10, alpha=0.7, color='blue', label='survived')
+plt.grid(True)
+plt.legend(loc='best', fontsize=15)
+plt.xlabel('Age')
 
 
