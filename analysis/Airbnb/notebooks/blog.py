@@ -30,7 +30,7 @@
 
 # ## Business Understanding
 #
-# Airbnb is a platform of accommodation which match the needs of staying and of lending.  
+# Airbnb is a platform of accommodation which match the needs of staying and of lending.
 # Their main source of income is **fee for host**. Basically, as the number of transactions between the host and the guest increases, their profit also increases.  
 # So, It is important to their business and I expect it to be one of their KPIs.
 #
@@ -254,7 +254,7 @@ plt.grid()
 
 # This is very surprising because I expect it would be a week at most.  
 # In fact, almost `maxmum_night` values are setted 1125.   
-# I have not used Airbnb so I don't know, but maybe there may be something like the default value.  
+# I have not used Airbnb so I don't know, but maybe there may be something like the default value.
 # Or there maybe two segments, one is `spot available listings`, the other is `long term listings like normal rent`. 
 
 # #### Summary
@@ -298,7 +298,7 @@ plt.title("Number of reviews by date")
 plt.grid()
 # -
 
-# It is little noisy, but we can see an increase in the number of Airbnb users. (and the date range is wide than calendar data)  
+# It is little noisy, but we can see an increase in the number of Airbnb users. (and the date range is wide than calendar data)
 # And I realize it seems to have a peak at about the same time of each year.  
 # So, let's use moving averages to smooth the graph.
 

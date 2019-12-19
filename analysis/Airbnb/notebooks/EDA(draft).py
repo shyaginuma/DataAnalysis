@@ -31,9 +31,9 @@ warnings.filterwarnings('ignore')
 # * レビューコメントのポジネガ分類
 # * レビューコメントの多い時期
 
-boston_calendar = pd.read_csv('Airbnb/boston-airbnb-open-data/calendar.csv')
-boston_listing = pd.read_csv('Airbnb/boston-airbnb-open-data/listings.csv')
-boston_review = pd.read_csv('Airbnb/boston-airbnb-open-data/reviews.csv')
+boston_calendar = pd.read_csv('Airbnb/boston-Airbnb-open-data/calendar.csv')
+boston_listing = pd.read_csv('Airbnb/boston-Airbnb-open-data/listings.csv')
+boston_review = pd.read_csv('Airbnb/boston-Airbnb-open-data/reviews.csv')
 seattle_calendar = pd.read_csv('Airbnb/seattle/calendar.csv')
 seattle_listing = pd.read_csv('Airbnb/seattle/listings.csv')
 seattle_review = pd.read_csv('Airbnb/seattle/reviews.csv')
